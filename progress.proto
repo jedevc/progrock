@@ -42,7 +42,7 @@ message Group {
   optional string parent = 2;
   // Name is a name for this group, relative to its parent.
   string name = 3;
-  // Labels contains a series of name/value pairs.
+  // Labels contains a series of name/value pairs.github.com/vito/progrock => ./progrock
   repeated Label labels = 4;
   // Started is the timestamp that the group started.
   google.protobuf.Timestamp started = 5;
@@ -105,6 +105,8 @@ message Vertex {
   // be used for running an interactive shell, or running
   // anything where there is a single primary output.
   bool zoomed = 12;
+  // Labels contains a series of name/value pairs.
+  repeated Label labels = 13;
 }
 
 // VertexTask is a task that a vertex is performing.
